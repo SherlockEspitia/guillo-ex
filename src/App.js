@@ -1,0 +1,27 @@
+//import logo from './logo.svg';
+import './App.css';
+import Bienvenida from './components/Bienvenida';
+import Saludo from './components/Saludo';
+import TarjetaProducto from './components/TarjetaProducto';
+import Contador from './useState/Contador';
+import NombreUsuario from './useState/NombreUsuario';
+import MostrarOcultar from './useState/MostrarOcultar';
+import CambiarColor from './useState/CambiarColor';
+function App() {
+  const name = 'Sherlock';
+  return (
+    <div className="App">
+        <h1>Hola {name} </h1>
+        <Saludo/>
+        <Bienvenida nombre="Pequeño Kratos" />
+
+        <TarjetaProducto nombre='Dvd' precio="2000" descripcion="Las mejores cumbias de System of a Down"></TarjetaProducto>  
+        <Contador></Contador>
+        <NombreUsuario></NombreUsuario>
+        <MostrarOcultar></MostrarOcultar>
+        <CambiarColor></CambiarColor>
+    </div>
+  );
+}
+
+export default App;
