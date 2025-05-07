@@ -8,6 +8,8 @@ import NombreUsuario from './useState/NombreUsuario';
 import MostrarOcultar from './useState/MostrarOcultar';
 import CambiarColor from './useState/CambiarColor';
 import ResumenCurso from './components/ResumenCurso';
+import EstadoConexion from './components/EstadoConexion';
+
 function App() {
   const name = 'Sherlock';
   return (
@@ -22,6 +24,7 @@ function App() {
         <NombreUsuario></NombreUsuario>
         <MostrarOcultar></MostrarOcultar>
         <CambiarColor></CambiarColor>
+        <EstadoConexion enLinea={false}></EstadoConexion>
     </div>
   );
 }
