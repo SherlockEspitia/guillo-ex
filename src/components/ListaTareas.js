@@ -8,5 +8,12 @@ recorrer y mostrar cada tarea.
 */
 
 export default function ListaTareas(props) {
-    
+    return (
+        <div>
+            <h2>Lista de Tareas</h2>
+            {props.tareas.map((tarea, index)=>{
+                return <p key={index}>{tarea.descripcion} - <span>{tarea.completada?'✅':'❎'}</span></p>
+            })}
+        </div>
+    )
 }
