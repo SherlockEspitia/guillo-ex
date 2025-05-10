@@ -17,6 +17,7 @@ import NoticiaDestacada from './components/NoticiaDestacada';
 import CambiarTema from './useState/CambiarTema';
 import ContadorDeClics from './useState/ContadorDeClics';
 import FormularioEdad from './useState/FormularioEdad';
+import SeleccionarIdioma from './useState/SeleccionarIdioma';
 
 function App() {
   const name = 'Sherlock';
@@ -48,6 +49,7 @@ function App() {
         fechaPublicacion="08 de marzo de 2025"></NoticiaDestacada>
         <ContadorDeClics></ContadorDeClics>
         <FormularioEdad></FormularioEdad>
+        <SeleccionarIdioma></SeleccionarIdioma>
       </section>
     </div>
   );
