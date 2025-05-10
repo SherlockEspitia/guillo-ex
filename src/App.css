@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: space-around;
 }
 
 .App-logo {
@@ -32,6 +34,18 @@ table{
   margin: 0 auto;
 }
 
+.tarjeta-noticia{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) repeat(2, 0);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin: 0 10px;
+
+  h2{grid-area: 1 / 1 / 2 / 4;}
+  .contenido-noticia{grid-area: 2 / 1 / 5 / 4;}
+  .fecha-noticia{grid-area: 5 / 2 / 6 / 4;}
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

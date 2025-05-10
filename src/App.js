@@ -13,11 +13,13 @@ import ResumenCurso from './components/ResumenCurso';
 import EstadoConexion from './components/EstadoConexion';
 import ListaTareas from './components/ListaTareas';
 import FichaAlumno from './components/FichaAlumno';
+import NoticiaDestacada from './components/NoticiaDestacada';
 
 function App() {
   const name = 'Sherlock';
   return (
     <div className="App">
+      <section>
         <h1>Hola {name} </h1>
         <ResumenCurso nombreCurso='Django' duracionSemanas='12' instructor='Lilliana Uribe'></ResumenCurso>        
         <EstadoConexion enLinea={false}></EstadoConexion>
@@ -26,6 +28,12 @@ function App() {
           {descripcion:'Hacer la tarea', completada: true}
         ]}/>
         <FichaAlumno nombre="Andres Jaramillo" programaFormacion="ADSO" ficha="4242524" jornada="Diurna"/>
+      </section>
+      <section>
+        <NoticiaDestacada tituloNoticia="Habemus Papa" 
+        contenidoNoticia="Fumata blanca, acuerdo y papa. Suenan las campanas de San Pedro. Los 133 cardenales del cónclave más multicultural de la historia han elegido a un nuevo pontífice en un cónclave más ágil de lo esperado, tras cuatro votaciones. El candidato elegido ha conseguido reunir 89 votos, los dos tercios necesarios para salir elegido. Su nombre se conocerá en breve con un ritual. El protodiácono de la Iglesia católica es el encargado de anunciar quién será el próximo papa con la tradicional fórmula en latín: “Annuntio vobis gaudium magnum: habemus Papam!” (“¡Os anuncio una gran alegría: tenemos Papa!”). Después, pronunciar el nombre del nuevo Papa y el que ha elegido como pontífice. Los dos últimos cónclaves se resolvieron en tiempos similares. En 2005 bastaron 24 horas y cuatro votaciones para la elección de Benedicto XVI."
+        fechaPublicacion="08 de marzo de 2025"></NoticiaDestacada>
+      </section>
     </div>
   );
 }
