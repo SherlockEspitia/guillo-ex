@@ -18,6 +18,7 @@ import CambiarTema from './useState/CambiarTema';
 import ContadorDeClics from './useState/ContadorDeClics';
 import FormularioEdad from './useState/FormularioEdad';
 import SeleccionarIdioma from './useState/SeleccionarIdioma';
+import ContadorDeCaracteres from './useState/ContadorDeCaracteres';
 
 function App() {
   const name = 'Sherlock';
@@ -50,6 +51,7 @@ function App() {
         <ContadorDeClics></ContadorDeClics>
         <FormularioEdad></FormularioEdad>
         <SeleccionarIdioma></SeleccionarIdioma>
+        <ContadorDeCaracteres></ContadorDeCaracteres>
       </section>
     </div>
   );
