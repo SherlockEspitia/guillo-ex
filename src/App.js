@@ -16,6 +16,7 @@ import FichaAlumno from './components/FichaAlumno';
 import NoticiaDestacada from './components/NoticiaDestacada';
 import CambiarTema from './useState/CambiarTema';
 import ContadorDeClics from './useState/ContadorDeClics';
+import FormularioEdad from './useState/FormularioEdad';
 
 function App() {
   const name = 'Sherlock';
@@ -46,6 +47,7 @@ function App() {
         En 2005 bastaron 24 horas y cuatro votaciones para la elección de Benedicto XVI."
         fechaPublicacion="08 de marzo de 2025"></NoticiaDestacada>
         <ContadorDeClics></ContadorDeClics>
+        <FormularioEdad></FormularioEdad>
       </section>
     </div>
   );
