@@ -15,6 +15,7 @@ import ListaTareas from './components/ListaTareas';
 import FichaAlumno from './components/FichaAlumno';
 import NoticiaDestacada from './components/NoticiaDestacada';
 import CambiarTema from './useState/CambiarTema';
+import ContadorDeClics from './useState/ContadorDeClics';
 
 function App() {
   const name = 'Sherlock';
@@ -33,8 +34,18 @@ function App() {
       </section>
       <section>
         <NoticiaDestacada tituloNoticia="Habemus Papa" 
-        contenidoNoticia="Fumata blanca, acuerdo y papa. Suenan las campanas de San Pedro. Los 133 cardenales del cónclave más multicultural de la historia han elegido a un nuevo pontífice en un cónclave más ágil de lo esperado, tras cuatro votaciones. El candidato elegido ha conseguido reunir 89 votos, los dos tercios necesarios para salir elegido. Su nombre se conocerá en breve con un ritual. El protodiácono de la Iglesia católica es el encargado de anunciar quién será el próximo papa con la tradicional fórmula en latín: “Annuntio vobis gaudium magnum: habemus Papam!” (“¡Os anuncio una gran alegría: tenemos Papa!”). Después, pronunciar el nombre del nuevo Papa y el que ha elegido como pontífice. Los dos últimos cónclaves se resolvieron en tiempos similares. En 2005 bastaron 24 horas y cuatro votaciones para la elección de Benedicto XVI."
+        contenidoNoticia="Fumata blanca, acuerdo y papa. Suenan las campanas de San Pedro. 
+        Los 133 cardenales del cónclave más multicultural de la historia han elegido a un nuevo pontífice 
+        en un cónclave más ágil de lo esperado, tras cuatro votaciones. 
+        El candidato elegido ha conseguido reunir 89 votos, los dos tercios necesarios para salir elegido. 
+        Su nombre se conocerá en breve con un ritual. 
+        El protodiácono de la Iglesia católica es el encargado de anunciar quién será el próximo papa 
+        con la tradicional fórmula en latín: “Annuntio vobis gaudium magnum: habemus Papam!” 
+        (“¡Os anuncio una gran alegría: tenemos Papa!”). Después, pronunciar el nombre del nuevo Papa y el que ha elegido como pontífice. 
+        Los dos últimos cónclaves se resolvieron en tiempos similares. 
+        En 2005 bastaron 24 horas y cuatro votaciones para la elección de Benedicto XVI."
         fechaPublicacion="08 de marzo de 2025"></NoticiaDestacada>
+        <ContadorDeClics></ContadorDeClics>
       </section>
     </div>
   );
