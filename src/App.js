@@ -14,6 +14,7 @@ import EstadoConexion from './components/EstadoConexion';
 import ListaTareas from './components/ListaTareas';
 import FichaAlumno from './components/FichaAlumno';
 import NoticiaDestacada from './components/NoticiaDestacada';
+import CambiarTema from './useState/CambiarTema';
 
 function App() {
   const name = 'Sherlock';
@@ -28,6 +29,7 @@ function App() {
           {descripcion:'Hacer la tarea', completada: true}
         ]}/>
         <FichaAlumno nombre="Andres Jaramillo" programaFormacion="ADSO" ficha="4242524" jornada="Diurna"/>
+        <CambiarTema></CambiarTema>
       </section>
       <section>
         <NoticiaDestacada tituloNoticia="Habemus Papa" 
