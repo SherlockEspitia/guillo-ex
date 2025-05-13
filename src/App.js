@@ -22,6 +22,8 @@ import ContadorDeCaracteres from './useState/ContadorDeCaracteres';
 import ContadorConTitulos from './useEffect/ContadorConTitulo';
 import ContadorConMensaje from './useEffect/ContadorConMensaje';
 import NombreConAlerta from './useEffect/NombreConAlerta';
+import FormularNombreApellido from './formulariosContralados/formularioSimple';
+import ValidacionEmail from './formulariosContralados/ValidacionEmail';
 
 function App() {
   const name = 'Sherlock';
@@ -60,6 +62,8 @@ function App() {
         <ContadorConTitulos></ContadorConTitulos>
         <ContadorConMensaje></ContadorConMensaje>
         <NombreConAlerta></NombreConAlerta>
+        <FormularNombreApellido></FormularNombreApellido>
+        <ValidacionEmail></ValidacionEmail>
       </section>
     </div>
   );
