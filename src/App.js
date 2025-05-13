@@ -19,6 +19,9 @@ import ContadorDeClics from './useState/ContadorDeClics';
 import FormularioEdad from './useState/FormularioEdad';
 import SeleccionarIdioma from './useState/SeleccionarIdioma';
 import ContadorDeCaracteres from './useState/ContadorDeCaracteres';
+import ContadorConTitulos from './useEffect/ContadorConTitulo';
+import ContadorConMensaje from './useEffect/ContadorConMensaje';
+import NombreConAlerta from './useEffect/NombreConAlerta';
 
 function App() {
   const name = 'Sherlock';
@@ -52,6 +55,11 @@ function App() {
         <FormularioEdad></FormularioEdad>
         <SeleccionarIdioma></SeleccionarIdioma>
         <ContadorDeCaracteres></ContadorDeCaracteres>
+      </section>
+      <section>
+        <ContadorConTitulos></ContadorConTitulos>
+        <ContadorConMensaje></ContadorConMensaje>
+        <NombreConAlerta></NombreConAlerta>
       </section>
     </div>
   );
